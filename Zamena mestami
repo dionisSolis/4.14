@@ -33,11 +33,9 @@ namespace qwerty
                 {
                     for (int j = 0; j < sizeOfMatrix; j++)
                     {
-                        {
-                            stringToRemember[j] = matrix[i+1, j];
-                            matrix[i+1, j] = matrix[i, j];
-                            matrix[i, j] = stringToRemember[j];
-                        }
+                        stringToRemember[j] = matrix[i+1, j];
+                        matrix[i+1, j] = matrix[i, j];
+                        matrix[i, j] = stringToRemember[j];
                     }
                 }
             }
